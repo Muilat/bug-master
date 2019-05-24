@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/list_margin"
+    android:orientation="horizontal">
+    <!--android:theme="s"-->
+
+	<com.google.developer.bugmaster.views.DangerLevelView
+            android:id="@+id/tv_danger_level"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:background="@drawable/background_danger"
+			android:textColor="#ffffff"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			/>
+
+
+    <LinearLayout
+		 android:layout_width="match_parent"
+		 android:layout_height="wrap_content"
+		 android:orientation="vertical"
+		 android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+		 <TextView
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:id="@+id/tv_friendly_name"
+             tools:text="hvgj"
+			 android:textSize="16sp"
+			 />
+		 <TextView
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:id="@+id/tv_scientific_name"
+             tools:text="hvgj"
+
+			 android:gravity="left"
+			 />
+	 </LinearLayout>
+
+
+   
+</LinearLayout>

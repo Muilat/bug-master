@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.google.developer.bugmaster.InsectDetailsActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/detailToolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+            android:layout_weight="1"
+
+			>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/iv_image_asset"
+				android:scaleType="centerInside"
+				android:background="#7986CB"
+				android:src="@drawable/ant"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tv_name"
+				tools:text="name"
+                android:layout_alignTop="@id/tv_scientific_name"
+				android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"/>
+
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tv_scientific_name"
+				tools:text="scientifoc"
+				android:layout_alignParentBottom="true"
+				android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"/>
+		</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+            <LinearLayout
+
+android:layout_marginBottom="@dimen/activity_horizontal_margin"                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classification"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_classification"
+                    android:text="Class i no know"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danger Level"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/on_a_scale_of_1_10_how_dangerous_is_this_insect"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <RatingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="10"
+                android:progressDrawable="@drawable/bug_danger"
+                android:id="@+id/rb_danger_level"
+                android:stepSize="1"
+
+                />
+
+        </LinearLayout>
+
+
+	</LinearLayout>
+
+	
+
+</android.support.design.widget.CoordinatorLayout>
